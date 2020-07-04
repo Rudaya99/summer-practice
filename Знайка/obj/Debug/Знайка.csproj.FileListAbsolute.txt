@@ -1,0 +1,12 @@
+E:\лет. практика\Знайка\obj\Debug\Знайка.csprojAssemblyReference.cache
+E:\лет. практика\Знайка\obj\Debug\Знайка.Form1.resources
+E:\лет. практика\Знайка\obj\Debug\Знайка.Form2.resources
+E:\лет. практика\Знайка\obj\Debug\Знайка.Properties.Resources.resources
+E:\лет. практика\Знайка\obj\Debug\Знайка.csproj.GenerateResource.cache
+E:\лет. практика\Знайка\obj\Debug\Знайка.csproj.CoreCompileInputs.cache
+E:\лет. практика\Знайка\bin\Debug\Знайка.exe.config
+E:\лет. практика\Знайка\bin\Debug\Знайка.exe
+E:\лет. практика\Знайка\bin\Debug\Знайка.pdb
+E:\лет. практика\Знайка\obj\Debug\Знайка.exe
+E:\лет. практика\Знайка\obj\Debug\Знайка.pdb
+E:\лет. практика\Знайка\obj\Debug\Знайка.Form3.resources
