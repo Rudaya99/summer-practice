@@ -38,5 +38,12 @@ namespace Знайка
             fr2.Show();
             Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form4 fr4 = new Form4();
+            fr4.Show();
+            Hide();
+        }
     }
 }

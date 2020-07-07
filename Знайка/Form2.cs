@@ -26,6 +26,11 @@ namespace Знайка
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             Form3 fr3 = new Form3();
             fr3.Show();
             Hide();
