@@ -19,9 +19,10 @@ namespace Знайка
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 fr1 = new Form1();
-            fr1.Show();
-            Hide();
+
+            Form ifrm = new Form1();
+            ifrm.Show(); // отображаем Form1
+            this.Hide(); // скрываем Form2 (this - текущая форма)
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,9 +32,9 @@ namespace Знайка
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 fr3 = new Form3();
-            fr3.Show();
-            Hide();
+            Form ifrm = new Form3();
+            ifrm.Show(); // отображаем Form3
+            this.Hide(); // скрываем Form2 (this - текущая форма)
         }
     }
 }

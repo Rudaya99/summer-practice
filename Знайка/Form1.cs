@@ -19,9 +19,17 @@ namespace Знайка
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 fr2 = new Form2();
-            fr2.Show();
-            Hide();
+            Form ifrm = new Form2();
+            ifrm.Show(); // отображаем Form2
+            this.Hide(); // скрываем Form1 (this - текущая форма)
+
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

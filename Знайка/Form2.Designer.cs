@@ -70,7 +70,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Знайка";
             this.ResumeLayout(false);
 
         }

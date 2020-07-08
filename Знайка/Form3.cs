@@ -34,16 +34,16 @@ namespace Знайка
 
         private void button16_Click(object sender, EventArgs e)
         {
-            Form2 fr2 = new Form2();
-            fr2.Show();
-            Hide();
+            Form ifrm = new Form2();
+            ifrm.Show(); // отображаем Form3
+            this.Hide(); // скрываем Form3 (this - текущая форма)
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 fr4 = new Form4();
-            fr4.Show();
-            Hide();
+            Form ifrm = new Form4();
+            ifrm.Show(); // отображаем Form3
+            this.Hide(); // скрываем Form3 (this - текущая форма)
         }
     }
 }
