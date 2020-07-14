@@ -188,7 +188,9 @@ namespace Знайка
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            if ((a = 0) && (radioButton1.Checked = true)) MessageBox.Show("Правильно!");
             answer[ind] = 1;
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
