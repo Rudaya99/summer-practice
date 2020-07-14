@@ -48,9 +48,9 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Old English Text MT", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Indigo;
-            this.button1.Location = new System.Drawing.Point(3, 37);
+            this.button1.Location = new System.Drawing.Point(-7, 17);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 250);
+            this.button1.Size = new System.Drawing.Size(390, 390);
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Old English Text MT", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Indigo;
-            this.button2.Location = new System.Drawing.Point(246, 37);
+            this.button2.Location = new System.Drawing.Point(389, 17);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 250);
+            this.button2.Size = new System.Drawing.Size(390, 390);
             this.button2.TabIndex = 1;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -78,9 +78,9 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Old English Text MT", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Indigo;
-            this.button3.Location = new System.Drawing.Point(492, 37);
+            this.button3.Location = new System.Drawing.Point(785, 17);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 250);
+            this.button3.Size = new System.Drawing.Size(390, 390);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Font = new System.Drawing.Font("Old English Text MT", 99.75F);
             this.button4.ForeColor = System.Drawing.Color.Indigo;
-            this.button4.Location = new System.Drawing.Point(739, 37);
+            this.button4.Location = new System.Drawing.Point(1181, 17);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 250);
+            this.button4.Size = new System.Drawing.Size(390, 390);
             this.button4.TabIndex = 3;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -107,12 +107,13 @@
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Font = new System.Drawing.Font("Old English Text MT", 99.75F);
             this.button5.ForeColor = System.Drawing.Color.Indigo;
-            this.button5.Location = new System.Drawing.Point(3, 285);
+            this.button5.Location = new System.Drawing.Point(-7, 384);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 250);
+            this.button5.Size = new System.Drawing.Size(390, 390);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -121,9 +122,9 @@
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Font = new System.Drawing.Font("Old English Text MT", 99.75F);
             this.button6.ForeColor = System.Drawing.Color.Indigo;
-            this.button6.Location = new System.Drawing.Point(246, 285);
+            this.button6.Location = new System.Drawing.Point(389, 384);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(250, 250);
+            this.button6.Size = new System.Drawing.Size(390, 390);
             this.button6.TabIndex = 5;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -135,9 +136,9 @@
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Font = new System.Drawing.Font("Old English Text MT", 99.75F);
             this.button7.ForeColor = System.Drawing.Color.Indigo;
-            this.button7.Location = new System.Drawing.Point(492, 285);
+            this.button7.Location = new System.Drawing.Point(785, 384);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(250, 250);
+            this.button7.Size = new System.Drawing.Size(390, 390);
             this.button7.TabIndex = 6;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -149,9 +150,9 @@
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Font = new System.Drawing.Font("Old English Text MT", 99.75F);
             this.button8.ForeColor = System.Drawing.Color.Indigo;
-            this.button8.Location = new System.Drawing.Point(739, 285);
+            this.button8.Location = new System.Drawing.Point(1181, 384);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(250, 250);
+            this.button8.Size = new System.Drawing.Size(390, 390);
             this.button8.TabIndex = 7;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -161,9 +162,9 @@
             this.button16.BackColor = System.Drawing.Color.Gold;
             this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.Location = new System.Drawing.Point(12, 535);
+            this.button16.Location = new System.Drawing.Point(21, 780);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(47, 41);
+            this.button16.Size = new System.Drawing.Size(78, 55);
             this.button16.TabIndex = 15;
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
@@ -174,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(986, 581);
+            this.ClientSize = new System.Drawing.Size(1564, 841);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);

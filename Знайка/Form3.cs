@@ -44,6 +44,12 @@ namespace Знайка
             Form ifrm = new Form4();
             ifrm.Show(); // отображаем Form3
             this.Hide(); // скрываем Form3 (this - текущая форма)
+           
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

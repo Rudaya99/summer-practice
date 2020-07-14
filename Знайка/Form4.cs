@@ -15,18 +15,23 @@ namespace Знайка
     { 
          Image a;
         int ind = 0;
-        int[] answer;
-        String[] filename = 
+        int[] answer = { 3, 4, 4, 1, 2, 2, 3, 1};
+        
+
+
+        String[] filename =
         {
-         ".\\Фауна\\Фауна 1.jpg",".\\Фауна\\Фауна 2.jpg",".\\Фауна\\Фауна 3.jpg",
-         ".\\Фауна\\Фауна 4.jpg",".\\Фауна\\Фауна 5.jpg",".\\Фауна\\Фауна 6.jpg",".\\Фауна\\Фауна 7.jpg",".\\Фауна\\Фауна 8.jpg"
+          ".\\Фауна\\Вопрос 1.jpg",".\\Фауна\\Фауна 1.jpg",".\\Фауна\\Вопрос 2.jpg",".\\Фауна\\Фауна 2.jpg",
+          ".\\Фауна\\Вопрос 3.jpg",".\\Фауна\\Фауна 3.jpg",".\\Фауна\\Вопрос 4.jpg",".\\Фауна\\Фауна 4.jpg",
+          ".\\Фауна\\Вопрос 5.jpg",".\\Фауна\\Фауна 5.jpg",".\\Фауна\\Вопрос 6.jpg",".\\Фауна\\Фауна 6.jpg",
+          ".\\Фауна\\Вопрос 7.jpg",".\\Фауна\\Фауна 7.jpg",".\\Фауна\\Вопрос 8.jpg",".\\Фауна\\Фауна 8.jpg",".\\Фауна\\Фауна.jpg"
     };
         
 
         public Form4()
         {
             InitializeComponent();
-            answer = new int[8];
+            
         }
         private void DemonstratePropertyItem(PaintEventArgs e)
         {
@@ -37,85 +42,133 @@ namespace Знайка
         {
             
                a= Image.FromFile(filename[ind]);
-        
-             
+            button1.BackColor = Color.Transparent; //прозрачный цвет фона
+            //button1.BackgroundImage = назначаем картинку
+            button1.BackgroundImageLayout = ImageLayout.Center; //выравниваем её по центру
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Text = "Вперёд";
+            button1.ForeColor = Color.Green;
+            button1.TextAlign = ContentAlignment.BottomCenter; //позиция текста - внизу по центру
+            button1.FlatAppearance.BorderSize = 0;//ширина рамки = 0
+            button1.TextImageRelation = TextImageRelation.ImageAboveText; //картинка над текстом
+            button1.TabStop = false;//делаем так, что бы при потере фокуса, вокруг кнопки не оставалась черная рамка
+
+
+            button2.BackColor = Color.Transparent; //прозрачный цвет фона
+            //button2.BackgroundImage = назначаем картинку
+            button2.BackgroundImageLayout = ImageLayout.Center; //выравниваем её по центру
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Text = "Назад";
+            button2.ForeColor = Color.Green;
+            button2.TextAlign = ContentAlignment.BottomCenter; //позиция текста - внизу по центру
+            button2.FlatAppearance.BorderSize = 0;//ширина рамки = 0
+            button2.TextImageRelation = TextImageRelation.ImageAboveText; //картинка над текстом
+            button2.TabStop = false;//делаем так, что бы при потере фокуса, вокруг кнопки не оставалась черная рамка
+
+
 
         }
+
 
         private void Form4_Paint(object sender, PaintEventArgs e)
         {
 
             
            // Draw the image.
-           e.Graphics.DrawImage(a, 0.0F, 0.0F,816.0F, 489.0F);
+           e.Graphics.DrawImage(a, 0.0F, 0.0F,1580.0F, 880.0F);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ind++;
-            if (ind > 7) ind = 7;
-            a = Image.FromFile(filename[ind]);
-            Invalidate();
-            switch (answer[ind])
+
+            if (ind == 0)
             {
-                case 0:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 1:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = true;
-                    radioButton4.Checked = false;
-                    break;
-                case 2:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = true;
-                    break;
-                case 3:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = true;
-                    break;
-                case 4:
-                    radioButton1.Checked = true;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 5:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = true;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 6:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = true;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 7:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = true;
-                    radioButton4.Checked = false;
-                    break;
-                case 8:
-                    radioButton1.Checked = true;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
 
-
+            else if ((ind == 1) && (radioButton3.Checked == true)) MessageBox.Show("Правильно!");
+            
+            else if (ind == 2)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 3) && (radioButton4.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 4)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 5) && (radioButton4.Checked == true)) MessageBox.Show("Правильно!");
+            else if(ind == 6)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 7) && (radioButton1.Checked == true)) MessageBox.Show("Правильно!");
+            else if(ind == 8)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 9) && (radioButton2.Checked == true)) MessageBox.Show("Правильно!");
+            else if(ind == 10)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 11) && (radioButton2.Checked == true)) MessageBox.Show("Правильно!");
+            else if(ind == 12)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 13) && (radioButton3.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 14)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
 
             }
+            else if ((ind == 15) && (radioButton1.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 16)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+
+            }
+            else { MessageBox.Show("Неправильно! Подумай ещё ))"); ind--; }
+            ind++;
+            if (ind > 16) ind = 16;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false; 
+            
+            
+            a = Image.FromFile(filename[ind]);
+            Invalidate();
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -124,88 +177,33 @@ namespace Знайка
             if (ind < 0) ind = 0;
             a = Image.FromFile(filename[ind]);
             Invalidate();
-            switch (answer[ind])
-            {
-                case 0:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 1:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = true;
-                    radioButton4.Checked = false;
-                    break;
-                case 2:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = true;
-                    break;
-                case 3:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = true;
-                    break;
-                case 4:
-                    radioButton1.Checked = true;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 5:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = true;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 6:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = true;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-                case 7:
-                    radioButton1.Checked = false;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = true;
-                    radioButton4.Checked = false;
-                    break;
-                case 8:
-                    radioButton1.Checked = true;
-                    radioButton2.Checked = false;
-                    radioButton3.Checked = false;
-                    radioButton4.Checked = false;
-                    break;
-
-
-
-            }
+            
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if ((a = 0) && (radioButton1.Checked = true)) MessageBox.Show("Правильно!");
-            answer[ind] = 1;
+            //if ( radioButton1.Checked = true) MessageBox.Show("Правильно!");
+            
+            //user[ind]= 1;
+            
 
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            answer[ind] = 2;
+            
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            answer[ind] = 3;
+            
+            
+
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            answer[ind] = 4;
+            
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -213,6 +211,7 @@ namespace Знайка
             Form ifrm = new Form3();
             ifrm.Show(); // отображаем Form4
             this.Hide(); // скрываем Form4 (this - текущая форма)
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
