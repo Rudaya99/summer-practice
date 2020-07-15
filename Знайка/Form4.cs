@@ -15,18 +15,35 @@ namespace Знайка
     { 
          Image a;
         int ind = 0;
-        int[] answer = { 3, 4, 4, 1, 2, 2, 3, 1};
-        
 
 
-        String[] filename =
-        {
-          ".\\Фауна\\Вопрос 1.jpg",".\\Фауна\\Фауна 1.jpg",".\\Фауна\\Вопрос 2.jpg",".\\Фауна\\Фауна 2.jpg",
-          ".\\Фауна\\Вопрос 3.jpg",".\\Фауна\\Фауна 3.jpg",".\\Фауна\\Вопрос 4.jpg",".\\Фауна\\Фауна 4.jpg",
-          ".\\Фауна\\Вопрос 5.jpg",".\\Фауна\\Фауна 5.jpg",".\\Фауна\\Вопрос 6.jpg",".\\Фауна\\Фауна 6.jpg",
-          ".\\Фауна\\Вопрос 7.jpg",".\\Фауна\\Фауна 7.jpg",".\\Фауна\\Вопрос 8.jpg",".\\Фауна\\Фауна 8.jpg",".\\Фауна\\Фауна.jpg"
-    };
-        
+
+
+        /* String[] filename =
+         {
+           ".\\Фауна\\Вопрос 1.jpg",".\\Фауна\\Фауна 1.jpg",".\\Фауна\\Вопрос 2.jpg",".\\Фауна\\Фауна 2.jpg",
+           ".\\Фауна\\Вопрос 3.jpg",".\\Фауна\\Фауна 3.jpg",".\\Фауна\\Вопрос 4.jpg",".\\Фауна\\Фауна 4.jpg",
+           ".\\Фауна\\Вопрос 5.jpg",".\\Фауна\\Фауна 5.jpg",".\\Фауна\\Вопрос 6.jpg",".\\Фауна\\Фауна 6.jpg",
+           ".\\Фауна\\Вопрос 7.jpg",".\\Фауна\\Фауна 7.jpg",".\\Фауна\\Вопрос 8.jpg",".\\Фауна\\Фауна 8.jpg",".\\Фауна\\Фауна.jpg"
+         };*/
+        /* string[] filename =
+         {
+            "F1","F2","F3","F4",
+            "F5","F6","F7","F8",
+            "F9","F10","F11","F12",
+            "F13","F14","F15","F16","F17"
+
+
+         };*/
+        String [] filename =
+         {
+            Picture.F1,Picture.F2,Picture.F3,Picture.F4,
+            Picture.F5,Picture.F6,Picture.F7,Picture.F8,
+            Picture.F9,Picture.F10,Picture.F11,Picture.F12,
+            Picture.F13,Picture.F14,Picture.F15,Picture.F16,Picture.F17
+        };
+
+
 
         public Form4()
         {
@@ -182,9 +199,7 @@ namespace Знайка
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            //if ( radioButton1.Checked = true) MessageBox.Show("Правильно!");
             
-            //user[ind]= 1;
             
 
         }
@@ -215,6 +230,11 @@ namespace Знайка
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
