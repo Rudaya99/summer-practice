@@ -83,6 +83,18 @@ namespace Знайка
             button2.TabStop = false;//делаем так, что бы при потере фокуса, вокруг кнопки не оставалась черная рамка
 
 
+            button3.BackColor = Color.Transparent; //прозрачный цвет фона
+            //button3.BackgroundImage = назначаем картинку
+            button3.BackgroundImageLayout = ImageLayout.Center; //выравниваем её по центру
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Text = "Вперёд";
+            button3.ForeColor = Color.Green;
+            button3.TextAlign = ContentAlignment.BottomCenter; //позиция текста - внизу по центру
+            button3.FlatAppearance.BorderSize = 0;//ширина рамки = 0
+            button3.TextImageRelation = TextImageRelation.ImageAboveText; //картинка над текстом
+            button3.TabStop = false;//делаем так, что бы при потере фокуса, вокруг кнопки не оставалась черная рамка
+
+
 
         }
 
@@ -97,7 +109,7 @@ namespace Знайка
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (Picture.F1 == ".\\Флора\\Флора 1.jpg") button1.Enabled = false;
             if (ind == 0)
             {
                 radioButton1.Checked = false;
@@ -223,7 +235,7 @@ namespace Знайка
 
         private void button16_Click(object sender, EventArgs e)
         {
-            Form ifrm = new Form3();
+            Form ifrm = new Form2();
             ifrm.Show(); // отображаем Form4
             this.Hide(); // скрываем Form4 (this - текущая форма)
             
@@ -237,6 +249,97 @@ namespace Знайка
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Picture.F1 ==".\\Фауна\\Вопрос 1.jpg") button3.Enabled = false;
+            if (ind == 0)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+
+            else if ((ind == 1) && (radioButton1.Checked == true)) MessageBox.Show("Правильно!");
+
+            else if (ind == 2)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 3) && (radioButton2.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 4)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 5) && (radioButton3.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 6)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 7) && (radioButton3.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 8)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 9) && (radioButton4.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 10)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 11) && (radioButton2.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 12)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+            }
+            else if ((ind == 13) && (radioButton1.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 14)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+
+            }
+            else if ((ind == 15) && (radioButton4.Checked == true)) MessageBox.Show("Правильно!");
+            else if (ind == 16)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+
+            }
+            else { MessageBox.Show("Неправильно! Подумай ещё ))"); ind--; }
+            ind++;
+            if (ind > 16) ind = 16;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+
+
+            a = Image.FromFile(filename[ind]);
+            Invalidate();
         }
     }
 }

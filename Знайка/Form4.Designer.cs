@@ -38,6 +38,7 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // imageList1
@@ -138,12 +139,25 @@
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button3.Location = new System.Drawing.Point(1393, 726);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(179, 69);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Вперёд";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1564, 841);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton4);
@@ -170,5 +184,6 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button3;
     }
 }

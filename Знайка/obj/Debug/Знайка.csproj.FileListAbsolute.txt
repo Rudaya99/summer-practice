@@ -16,7 +16,6 @@ E:\Documents\GitHub\summer-practice\Знайка\bin\Debug\Знайка.pdb
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.csprojAssemblyReference.cache
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.Form1.resources
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.Form2.resources
-E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.Form3.resources
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.Properties.Resources.resources
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.csproj.GenerateResource.cache
 E:\Documents\GitHub\summer-practice\Знайка\obj\Debug\Знайка.csproj.CoreCompileInputs.cache
